@@ -15,6 +15,8 @@
 
 This repository contains the official implementations of the frameworks **DINOLight** and **OmniLight** developed by the **SNU-ISPL** team for lighting-related image restoration tasks: Image Shadow Removal and Ambient Light Normalization. 
 
+<p align="center"><img src="figs/figure_firstpage.PNG" width="900"></p>
+
 ---
 
 ## 📁 Projects Overview
