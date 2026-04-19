@@ -104,3 +104,4 @@ This project is based on the following projects. We thank the authors for releas
 * [Restormer](https://github.com/swz30/Restormer)
 * [FFTformer](https://github.com/kkkls/fftformer)
 * [DINOv2](https://github.com/facebookresearch/dinov2)
+* [MoCE-IR](https://github.com/eduardzamfir/MoCE-IR)
