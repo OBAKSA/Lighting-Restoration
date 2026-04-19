@@ -27,7 +27,7 @@ We provide two main frameworks, each exploring contrasting strategies for restor
   [![arXiv](https://img.shields.io/badge/arXiv-paper-red)](https://arxiv.org/abs/2603.12579)
   * A specialized baseline utilizing DINOv2's visual priors for robust ambient light normalization and shadow removal.
 * [**[CVPRW2026]💡OmniLight: One Model to Rule All Lighting Conditions**](./OmniLight)
-  [![arXiv](https://img.shields.io/badge/arXiv-paper-red)](https://arxiv.org/abs/2603.12579)
+  [![arXiv](https://img.shields.io/badge/arXiv-paper-red)](https://arxiv.org/abs/2604.15170)
   * A unified architecture extending DINOLight with WD-MoE, designed to handle diverse lighting conditions as an all-in-one model, demonstrating outstanding generalization capabilities across multiple datasets.
 
 ## 🏆 **NTIRE 2026 Challenge Performance** 
@@ -84,6 +84,13 @@ If you found our work helpful, please consider citing our work.
   title={DINOLight: Robust Ambient Light Normalization with Self-supervised Visual Prior Integration},
   author={Oh, Youngjin and Kwon, Junhyeong and Cho, Nam Ik},
   journal={arXiv preprint arXiv:2603.12579},
+  year={2026}
+}
+
+@article{oh2026omnilight,
+  title={OmniLight: One Model to Rule All Lighting Conditions},
+  author={Oh, Youngjin and Park, Junyoung and Kwon, Junhyeong and Cho, Nam Ik},
+  journal={arXiv preprint arXiv:2604.15170},
   year={2026}
 }
 ```
