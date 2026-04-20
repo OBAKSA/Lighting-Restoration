@@ -13,7 +13,7 @@
   <a href="https://pytorch.org/"><img src="https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white" alt="PyTorch"></a>
 </p>
 
-This repository contains the official implementations of the frameworks **DINOLight** and **OmniLight** developed by the **SNU-ISPL** team for lighting-related image restoration tasks: Image Shadow Removal and Ambient Light Normalization. 
+This repository contains the official implementations of the frameworks **DINOLight** and **OmniLight** developed by the **SNU-ISPL** team for lighting-related image restoration tasks: Image Shadow Removal and Ambient Lighting Normalization. 
 
 <p align="center"><img src="figs/figure_firstpage.PNG" width="900"></p>
 
@@ -21,34 +21,45 @@ This repository contains the official implementations of the frameworks **DINOLi
 
 ## 📁 Projects Overview
 
-We provide two main frameworks, each exploring contrasting strategies for restoring underlying image content under adverse lighting/illumination conditions. Please navigate to the respective directories for details.
+We provide two main frameworks, each exploring contrasting strategies for restoring underlying image content under adverse lighting/illumination conditions.
 
-* [**[ICPR2026]🦖DINOLight: Robust Ambient Light Normalization with Self-supervised Visual Prior Integration**](./DINOLight)
+* **[ICPR2026]🦖DINOLight: Robust Ambient Light Normalization with Self-supervised Visual Prior Integration**
   [![arXiv](https://img.shields.io/badge/arXiv-paper-red)](https://arxiv.org/abs/2603.12579)
-  * A specialized baseline utilizing DINOv2's visual priors for robust ambient light normalization and shadow removal.
-* [**[CVPRW2026]💡OmniLight: One Model to Rule All Lighting Conditions**](./OmniLight)
+  * A specialized baseline utilizing DINOv2's visual priors for robust ambient Lighting normalization and shadow removal.
+<hr />
+
+> **Abstract:** *This paper presents a new ambient light normalization framework, DINOLight, that integrates the self-supervised model DINOv2's image understanding capability into the restoration process as a visual prior. Ambient light normalization aims to restore images degraded by non-uniform shadows and lighting caused by multiple light sources and complex scene geometries. We observe that DINOv2 can reliably extract both semantic and geometric information from a degraded image. Based on this observation, we develop a novel framework to utilize DINOv2 features for lighting normalization. First, we propose an adaptive feature fusion module that combines features from different DINOv2 layers using a point-wise softmax mask. Next, the fused features are integrated into our proposed restoration network in both spatial and frequency domains through an auxiliary cross-attention mechanism. Experiments show that DINOLight achieves superior performance on the Ambient6K dataset, and that DINOv2 features are effective for enhancing ambient light normalization. We also apply our method to shadow-removal benchmark datasets, achieving competitive results compared to methods that use mask priors.* 
+
+<hr />
+    
+* **[CVPRW2026]💡OmniLight: One Model to Rule All Lighting Conditions**
   [![arXiv](https://img.shields.io/badge/arXiv-paper-red)](https://arxiv.org/abs/2604.15170)
   * A unified architecture extending DINOLight with WD-MoE, designed to handle diverse lighting conditions as an all-in-one model, demonstrating outstanding generalization capabilities across multiple datasets.
+<hr />
+
+> **Abstract:** *Adverse lighting conditions, such as cast shadows and irregular illumination, pose significant challenges to computer vision systems by degrading visibility and color fidelity. Consequently, effective shadow removal and ALN are critical for restoring underlying image content, improving perceptual quality, and facilitating robust performance in downstream tasks. However, while achieving state-of-the-art results on specific benchmarks is a primary goal in image restoration challenges, real-world applications often demand robust models capable of handling diverse domains. To address this, we present a comprehensive study on lighting-related image restoration by exploring two contrasting strategies. We leverage a robust framework for ALN, DINOLight, as a specialized baseline to exploit the characteristics of each individual dataset, and extend it to OmniLight, a generalized alternative incorporating our proposed Wavelet Domain Mixture-of-Experts (WD-MoE) that is trained across all provided datasets. Through a comparative analysis of these two methods, we discuss the impact of data distribution on the performance of specialized and unified architectures in lighting-related image restoration. Notably, both approaches secured top-tier rankings across all three lighting-related tracks in the NTIRE 2026 Challenge, demonstrating their outstanding perceptual quality and generalization capabilities.* 
+
+<hr />
 
 ## 🏆 **NTIRE 2026 Challenge Performance** 
 
-We participated in lighting-related image restoration track of the NTIRE 2026 Challenge ([Image Shadow Removal](https://www.codabench.org/competitions/12935/) and Ambient Light Normalization under [White Lighting](https://www.codabench.org/competitions/12703/)/[Color Lighting](https://www.codabench.org/competitions/12792/)), where our methods secured top-tier rankings among numerous participants.
+We participated in lighting-related image restoration track of the NTIRE 2026 Challenge ([Image Shadow Removal](https://www.codabench.org/competitions/12935/) and Ambient Lighting Normalization under [White Lighting](https://www.codabench.org/competitions/12703/)/[Color Lighting](https://www.codabench.org/competitions/12792/)), where our methods secured top-tier rankings among numerous participants.
 
 🦖 **DINOLight** 
 
-* 🥇 **[1st] Place** in Fidelity Track: Ambient Light Normalization (Color Lighting)
-* 🥈 **[2nd] Place** in Perceptual Track: Ambient Light Normalization (Color Lighting)
+* 🥇 **[1st] Place** in Fidelity Track: Ambient Lighting Normalization (Color Lighting)
+* 🥈 **[2nd] Place** in Perceptual Track: Ambient Lighting Normalization (Color Lighting)
 * 🥉 **[3rd] Place** in Track: Shadow Removal 
 
 💡 **OmniLight** 
 
-* 🥇 **[1st] Place** in Perceptual Track: Ambient Light Normalization (White Lighting)
-* 🥈 **[2nd] Place** in Fidelity Track: Ambient Light Normalization (Color Lighting)
-* 🏅 **[4th] Place** in Perceptual Track: Ambient Light Normalization (Color Lighting) 
+* 🥇 **[1st] Place** in Perceptual Track: Ambient Lighting Normalization (White Lighting)
+* 🥈 **[2nd] Place** in Fidelity Track: Ambient Lighting Normalization (Color Lighting)
+* 🏅 **[4th] Place** in Perceptual Track: Ambient Lighting Normalization (Color Lighting) 
 
 ## 🍀Environment Setup
 
-### 📄 `environment.yml`
+#### 📄 `environment.yml`
 
 List of required packages to reproduce and/or run our method.
 
@@ -76,6 +87,32 @@ To get started, download WSRD+, Ambient6K, and CL3AN datasets from the official 
 * [WSRD+](https://github.com/fvasluianu97/WSRD-DNSR)
 * [Ambient6K](https://github.com/fvasluianu97/IFBlend)
 * [CL3AN](https://github.com/fvasluianu97/RLN2)
+
+#### 📁 `/datasets`
+
+Place the downloaded datasets under this directory according to the dataset type.
+
+## 🦾Pretrained Models
+Download the pretrained models provided in the link below.
+* [Google Drive]()
+
+#### 📁 `/pretrained_weights`
+
+Place the pretrained models under this directory following the provided structure. 
+
+## 🤖Inference
+
+Run `test_WSRD.py`, `test_Ambient6K.py`, or `test_CL3AN.py` for evaluation of different benchmark datasets. 
+
+* The default setting is **OmniLight**. To change the setting to **DINOLight**, change the `--exp_name` and `--ckpt_name` arguments.
+* For example, to run DINOLight on WSRD, run
+```bash
+python test_WSRD.py --exp_name=dinolight --ckpt_name=dinolight_wsrd_bench.pth
+```
+
+#### 📁 `/result`
+
+The test results will be stored under this directory. 
 
 ## 🫶Citation
 If you found our work helpful, please consider citing our work.
