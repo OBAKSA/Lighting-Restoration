@@ -94,7 +94,7 @@ Place the downloaded datasets under this directory according to the dataset type
 
 ## 🦾Pretrained Models
 Download the pretrained models provided in the link below.
-* [Google Drive]()
+* [Google Drive](https://drive.google.com/drive/u/0/folders/1NsOvvodp2KoSCvwzqdVpqb_52KGl8H3o)
 
 #### 📁 `/pretrained_weights`
 
