@@ -14,14 +14,6 @@
 #   
 #   Modifications made by Youngjin Oh
 # ---------------------------------------------------------------------------
-# This file incorporates work from MoCE-IR covered by the following
-# copyright and permission notice:
-#
-#   MoCE-IR : Copyright (c) 2025 Eduard Zamfir
-#   Licensed under the Apache-2.0 License.
-#   
-#   Modifications made by Youngjin Oh
-# ---------------------------------------------------------------------------
 
 import torch
 import torch.nn as nn
