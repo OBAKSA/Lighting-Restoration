@@ -34,6 +34,7 @@ We provide two main frameworks, each exploring contrasting strategies for restor
     
 * **[CVPRW2026]💡OmniLight: One Model to Rule All Lighting Conditions**
   [![arXiv](https://img.shields.io/badge/arXiv-paper-red)](https://arxiv.org/abs/2604.15170)
+  [![CVPRW](https://img.shields.io/badge/CVPRW-2026-blue)](https://openaccess.thecvf.com/content/CVPR2026W/NTIRE/html/Oh_OmniLight_One_Model_to_Rule_All_Lighting_Conditions_CVPRW_2026_paper.html)
   * A unified architecture extending DINOLight with WD-MoE, designed to handle diverse lighting conditions as an all-in-one model, demonstrating outstanding generalization capabilities across multiple datasets.
 <hr />
 
