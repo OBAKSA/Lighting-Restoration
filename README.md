@@ -125,6 +125,14 @@ If you found our work helpful, please consider citing our work.
   year={2026}
 }
 
+@inproceedings{oh2026omnilight,
+  title={OmniLight: One Model to Rule All Lighting Conditions},
+  author={Oh, Youngjin and Park, Junyoung and Kwon, Junhyeong and Cho, Nam Ik},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={2247--2258},
+  year={2026}
+}
+
 @article{oh2026omnilight,
   title={OmniLight: One Model to Rule All Lighting Conditions},
   author={Oh, Youngjin and Park, Junyoung and Kwon, Junhyeong and Cho, Nam Ik},
