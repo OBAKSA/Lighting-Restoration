@@ -25,6 +25,7 @@ We provide two main frameworks, each exploring contrasting strategies for restor
 
 * **[ICPR2026]🦖DINOLight: Robust Ambient Light Normalization with Self-supervised Visual Prior Integration**
   [![arXiv](https://img.shields.io/badge/arXiv-paper-red)](https://arxiv.org/abs/2603.12579)
+  [![ICPR](https://img.shields.io/badge/ICPR-2026-blue)](https://link.springer.com/chapter/10.1007/978-3-032-31335-5_8)
   * A specialized baseline utilizing DINOv2's visual priors for robust ambient Lighting normalization and shadow removal.
 <hr />
 
@@ -118,6 +119,15 @@ The test results will be stored under this directory.
 ## 🫶Citation
 If you found our work helpful, please consider citing our work.
 ```
+@inproceedings{oh2026dinolight,
+  title={Dinolight: Robust ambient light normalization with self-supervised visual prior integration},
+  author={Oh, Youngjin and Kwon, Junhyeong and Cho, Nam Ik},
+  booktitle={International Conference on Pattern Recognition},
+  pages={106--121},
+  year={2026},
+  organization={Springer}
+}
+
 @article{oh2026dinolight,
   title={DINOLight: Robust Ambient Light Normalization with Self-supervised Visual Prior Integration},
   author={Oh, Youngjin and Kwon, Junhyeong and Cho, Nam Ik},
